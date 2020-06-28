@@ -85,18 +85,20 @@ class _HomeState extends State<Home> {
                       onPressed: () {
                         _changePeople(1);
                       },
-                      child: Text(
-                        "+1",
-                        style: TextStyle(fontSize: 40, color: Colors.white),
-                      ),
+                      child: Icon(
+                        Icons.add_circle,
+                        color: Colors.white,
+                        size: 50,
+                      )
                     ),
                     FlatButton(
                       onPressed: () {
                         _changePeople(-1);
                       },
-                      child: Text(
-                        "-1",
-                        style: TextStyle(fontSize: 40, color: Colors.white),
+                      child: Icon(
+                        Icons.remove_circle,
+                        color: Colors.white,
+                        size: 50,
                       ),
                     ),
                   ],
